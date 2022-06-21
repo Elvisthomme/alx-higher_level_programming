@@ -3,7 +3,7 @@ import sys
 def safe_function(fct, *args):
     try:
         result = fct(*args)
-    except BaseException as err:
+    except Exception as err:
         result = None
-        sys.stderr.write("Exception: {err}")
+        sys.stderr.write(f"Exception: {err}\n")
     return result
