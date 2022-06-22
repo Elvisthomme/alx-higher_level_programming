@@ -70,7 +70,7 @@ class Square:
                 string += '\n'
             for i in range(self.__size):
                 for j in range(self.__position[0]):
-                    string +=' '
+                    string += ' '
                 for j in range(self.__size):
                     string += '#'
                 string += '\n'

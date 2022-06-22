@@ -47,12 +47,30 @@ class SinglyLinkedList:
         node = Node(value)
         head = self.__head
         if head is None:
-            head = node
+            self.__head = node
+        elif head.data >= value:
+            node.next_node = head
+            self.__head = node
         else:
-            while head.next_node is not None and head.data < node.data:
+            while head.next_node is not None\
+              and head.next_node.data <= value:
                 head = head.next_node
             if head.next_node is None:
                 head.next_node = node
             else:
                 node.next_node = head.next_node
                 head.next_node = node
+                    
+
+    def __str__(self):
+        """string representation of SinglyLinkedList"""
+        head = self.__head
+        if head is None:
+            return ''
+        else:
+            string = ''
+            while head is not None:
+                string += str(head.data) + '\n'
+                head = head.next_node
+        return string[:-1]
+
