@@ -60,7 +60,6 @@ class SinglyLinkedList:
             else:
                 node.next_node = head.next_node
                 head.next_node = node
-                    
 
     def __str__(self):
         """string representation of SinglyLinkedList"""
@@ -73,4 +72,3 @@ class SinglyLinkedList:
                 string += str(head.data) + '\n'
                 head = head.next_node
         return string[:-1]
-
