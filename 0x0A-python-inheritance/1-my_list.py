@@ -2,6 +2,7 @@
 
 """0x0A-python-inheritance module"""
 
+
 class MyList(list):
     """A subclass of list"""
 
