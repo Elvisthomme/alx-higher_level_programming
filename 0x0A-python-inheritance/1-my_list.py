@@ -10,4 +10,4 @@ class MyList(list):
         """Print the list, but sorted (ascending sort)"""
         d = self.copy()
         d.sort()
-        return d
+        print(d)
