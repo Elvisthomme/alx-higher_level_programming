@@ -5,4 +5,4 @@
 
 def is_same_class(obj, a_class):
     """Verify that obj is an instance of a_class"""
-    return isinstance(obj, a_class)
+    return isinstance(obj, a_class) and not issubclass(obj.__class__, a_class)
