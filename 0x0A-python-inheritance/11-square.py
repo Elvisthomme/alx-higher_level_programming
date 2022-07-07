@@ -5,6 +5,7 @@
 
 Rectangle = __import__('9-rectangle').Rectangle
 
+
 class Square(Rectangle):
     """Square class"""
     def __init__(self, size):
@@ -19,4 +20,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """String representation of a square"""
-        return "[Square] {}/{}".format(self.__width, self.__height)
+        return "[Square] {}/{}".format(self.__size, self.__size)
