@@ -10,6 +10,7 @@ This a test of a subclass of list whit the function print_sorted
 
 >>> my_list = MyList()
 >>> my_list.print_sorted()
+[]
 
 >>> my_list.append(1)
 >>> my_list.append(4)
