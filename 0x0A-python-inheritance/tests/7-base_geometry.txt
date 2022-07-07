@@ -44,3 +44,27 @@ Test Geometry module
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] distance must be an integer
+
+>>> try:
+...     bg.integer_validator("distance", [1])
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] distance must be an integer
+
+>>> try:
+...     bg.integer_validator("distance", True)
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] distance must be an integer
+
+>>> try:
+...     bg.integer_validator("distance", {1, 2})
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] distance must be an integer
+
+>>> try:
+...     bg.integer_validator("distance", None)
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] distance must be an integer
