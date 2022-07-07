@@ -9,6 +9,8 @@ This a test of a subclass of list whit the function print_sorted
 >>> MyList = __import__('1-my_list').MyList
 
 >>> my_list = MyList()
+>>> my_list.print_sorted()
+
 >>> my_list.append(1)
 >>> my_list.append(4)
 >>> my_list.append(2)
@@ -23,3 +25,6 @@ This a test of a subclass of list whit the function print_sorted
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 
+>>> my_list.append(-5)
+>>> my_list.print_sorted()
+[-5, 1, 2, 3, 4, 5]
