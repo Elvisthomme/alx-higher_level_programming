@@ -1,4 +1,4 @@
 -- Print the full description of the table first_table
 
--- SHOW COLUMN table_name
-SHOW COLUMN first_table;
+-- SHOW COLUMNS FROM table_name
+SHOW COLUMNS FROM first_table;
