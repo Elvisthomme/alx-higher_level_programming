@@ -1,7 +1,7 @@
 -- Create a table second_table in the database hbtn_0c_0
 
--- command CREATE [IF NOT EXISTS] TABLE table_name(c1 type1, c2 type2, ...)
-CREATE IF NOT EXISTS TABLE second_table(id INT, name VARCHAR(256), score INT);
+-- command: CREATE TABLE [IF NOT EXISTS] table_name(c1 type1, c2 type2, ...)
+CREATE TABLE IF NOT EXISTS second_table(id INT, name VARCHAR(256), score INT);
 
 -- Insert multiples row to the table
 
