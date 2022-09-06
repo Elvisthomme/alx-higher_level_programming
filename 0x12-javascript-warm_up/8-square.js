@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const myVar = Number(process.argv[2]);
 let x = 'x';
-if (!myVar) {
+if (isNaN(myVar)) {
   console.log('Missing size');
 } else {
   for (let i = 0; i < myVar - 1; i++) {
